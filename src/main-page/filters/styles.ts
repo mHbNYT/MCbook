@@ -1,0 +1,56 @@
+import { createStyles, makeStyles } from "@material-ui/core";
+
+export const useStyles = makeStyles(() => createStyles({
+  container: {
+    display: 'flex',
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    width: "100%",
+    padding: 5,
+    height: 50,
+    marginBottom: 10,
+  },
+  selectedButton: {
+    backgroundColor: "#02c3d9 !important",
+    boxShadow: "0px 0px 13px #AFAFAF",
+  },
+  button: {
+    backgroundColor: "#fff",
+    border: "none",
+    boxSizing: "border-box",
+    borderRadius: 5,
+    cursor: "pointer",
+    // fontFamily: 'inherit',
+    fontWeight: 400,
+    fontSize: 12,
+    display: "inline-block",
+    height: 25,
+    width: 120,
+    margin: "10px 25px",
+    maxWidth: "100%",
+    overflow: "hidden",
+    outline: "none",
+    padding: "0 10px",
+    position: "relative",
+    textAlign: "center",
+    textOverflow: "ellipsis",
+    transition: "background-color 0.2s, opacity 0.2s",
+    whiteSpace: "nowrap",
+  },
+  categoryFilterContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    padding: 10,
+    backgroundColor: "#fff",
+    width: 250,
+    '& > label': {
+      margin: "10px 0",
+    },
+  },
+  separator: {
+    border: '1px solid #eee',
+    width: "80%",
+    alignSelf: 'center',
+  },
+}));

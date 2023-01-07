@@ -1,0 +1,97 @@
+@font-face {
+  font-family: Yekan Bakh;
+  font-style: normal;
+  font-weight: 100;
+  src: url('/assets/fonts/YekanBakhFont/FaNum/YekanBakhFaNum01Hairline.woff') format('woff');
+}
+
+@font-face {
+  font-family: Yekan Bakh;
+  font-style: normal;
+  font-weight: 200;
+  src: url('/assets/fonts/YekanBakhFont/FaNum/YekanBakhFaNum02Thin.woff') format('woff');
+}
+
+@font-face {
+  font-family: Yekan Bakh;
+  font-style: normal;
+  font-weight: 300;
+  src: url('/assets/fonts/YekanBakhFont/FaNum/YekanBakhFaNum03Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: Yekan Bakh;
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/YekanBakhFont/FaNum/YekanBakhFaNum04Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: Yekan Bakh;
+  font-style: normal;
+  font-weight: 500;
+  src: url('/assets/fonts/YekanBakhFont/FaNum/YekanBakhFaNum05Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: Yekan Bakh;
+  font-style: normal;
+  font-weight: 600;
+  src: url('/assets/fonts/YekanBakhFont/FaNum/YekanBakhFaNum06Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: Yekan Bakh;
+  font-style: normal;
+  font-weight: 700;
+  src: url('/assets/fonts/YekanBakhFont/FaNum/YekanBakhFaNum07Heavy.woff') format('woff');
+}
+
+@font-face {
+  font-family: Yekan Bakh;
+  font-style: normal;
+  font-weight: 800;
+  src: url('/assets/fonts/YekanBakhFont/FaNum/YekanBakhFaNum08Fat.woff') format('woff');
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Yekan Bakh" !important;
+  /* font-family: IRANSansWeb(FaNum); */
+  scroll-behavior:smooth !important;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Yekan Bakh" !important;
+  /* font-family: 'IRANSans'; */
+}
+
+.heart {
+  width: 75px;
+  height: 75px;
+  background: url("https://cssanimation.rocks/images/posts/steps/heart.png") no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+  transition: background-position 1s steps(28);
+  transition-duration: 0s;
+}
+
+.heart.is-active{
+    transition-duration: 1s;
+    background-position: -2800px 0;
+}
+
+.stage {
+  position: relative;
+  /* top: 50%;
+  left: 50%; */
+  transform: translate(-50%, -50%);
+}
